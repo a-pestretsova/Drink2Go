@@ -1,0 +1,42 @@
+.logo {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $black-100-color;
+
+  @include tablet {
+    margin-top: 22px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.logo__image {
+  width: 32px;
+  height: 36px;
+
+  @include tablet {
+    width: 82px;
+  }
+
+  @include desktop {
+    width: 170px;
+  }
+}
+
+.logo__text-desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
+    width: 126px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+}

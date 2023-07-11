@@ -1,0 +1,131 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+  background-color: $white-color;
+
+  @include tablet {
+    width: 580px;
+    margin-left: 0;
+  }
+
+  @include desktop {
+    width: 885px;
+  }
+}
+
+.main-nav__wrapper {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -40px;
+  right: -7px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: $white-color;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  background-color: $white-100-color;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 18px;
+  height: 2px;
+  background-color: $black-100-color;
+  box-shadow:
+    0 6px 0 0 $black-100-color,
+    0 12px 0 0 $black-100-color;
+  content: "";
+}
+
+.main-nav--opened .site-list__item {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  @include mobile-only {
+    top: -40px;
+    right: 0;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 18px;
+      height: 2px;
+      background-color: $black-100-color;
+      content: "";
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active {
+      background-color: $white-100-color;
+    }
+  }
+}
+
+.main-nav--closed .user-list {
+  @include mobile-only {
+    top: -44px;
+    left: 50%;
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  @include mobile-only {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    margin-left: -20px;
+    z-index: 10;
+    background-color: $white-color;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  @include mobile-only {
+    position: static;
+    min-height: 0;
+  }
+}
+
+.main-nav--nojs .site-list__item {
+  @include mobile-only {
+    display: block;
+  }
+}

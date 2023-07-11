@@ -1,0 +1,20 @@
+.store__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.store__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black-100-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.store__link:hover {
+  color: $violet-color;
+}
+
+.store__link:active {
+  color: $violet-400-color;
+}

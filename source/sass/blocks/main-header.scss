@@ -1,0 +1,29 @@
+.main-header {
+  position: relative;
+  padding: 12px 20px 7px;
+  background-color: $white-color;
+  color: $black-100-color;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @include desktop {
+    padding: 0 40px;
+  }
+}
+
+.main-header__logo {
+  background-color: $white-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+

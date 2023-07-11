@@ -1,0 +1,12 @@
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: $violet-color;
+
+  @include desktop {
+    margin-top: 10px;
+  }
+}

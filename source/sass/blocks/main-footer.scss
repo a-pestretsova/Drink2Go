@@ -1,0 +1,168 @@
+.main-footer__wrapper {
+  padding: 10px 20px 30px;
+
+  @include tablet {
+    padding: 33px 20px 30px;
+  }
+
+  @include desktop {
+    padding: 33px 40px 30px;
+  }
+}
+
+.main-footer__wrapper-desktop {
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-footer__social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+
+  @include tablet {
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    margin-bottom: 54px;
+  }
+}
+
+.main-footer__logo {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $black-100-color;
+
+  @include desktop {
+    margin-right: 62px;
+  }
+}
+
+.main-footer__logo__text-desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 30px;
+    margin-bottom: 38px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 297px);
+    gap: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.main-footer__store {
+  position: relative;
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__store::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -3vw;
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: $white-100-color;
+
+  @include tablet {
+    justify-content: end;
+    display: none;
+  }
+}
+
+.main-footer__media {
+  position: relative;
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__media::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -3vw;
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: $white-100-color;
+
+  @include tablet {
+    justify-content: end;
+    display: none;
+  }
+}
+
+.main-footer__contacts {
+  position: relative;
+  margin-bottom: 41px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__contacts::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -3vw;
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: $white-100-color;
+
+  @include tablet {
+    justify-content: end;
+    display: none;
+  }
+}
+
+.main-footer__copyright {
+  position: relative;
+  text-align: center;
+}
+
+.main-footer__copyright::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -3vw;
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: $white-100-color;
+
+  @include tablet {
+    justify-content: end;
+    display: none;
+  }
+}

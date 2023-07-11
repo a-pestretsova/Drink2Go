@@ -1,0 +1,31 @@
+.copyright__logo {
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $silver-color;
+  vertical-align: top;
+}
+
+.copyright__text:hover {
+  color: $violet-color;
+}
+
+.copyright__text:active {
+  color: $violet-400-color;
+}
+
+.copyright__logo-icon {
+  fill: $silver-color;
+}
+
+.copyright__logo:hover .copyright__logo-icon {
+  fill: $violet-color;
+}
+
+.copyright__logo:active .copyright__logo-icon {
+  fill: $violet-400-color;
+}

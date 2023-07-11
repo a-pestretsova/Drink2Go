@@ -1,0 +1,20 @@
+.media__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.media__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black-100-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.media__link:hover {
+  color: $violet-color;
+}
+
+.media__link:active {
+  color: $violet-400-color;
+}

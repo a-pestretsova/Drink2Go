@@ -1,0 +1,110 @@
+.user-list {
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 88px;
+  transform: translateX(-2px);
+
+  @include tablet {
+    position: static;
+    margin-top: 25px;
+  }
+
+  @include desktop {
+    width: 265px;
+    margin-top: 0;
+    justify-content: space-around;
+    transform: translateX(148px);
+  }
+}
+
+.user-list__item {
+  position: relative;
+  display: block;
+  line-height: 24px;
+  color: $black-100-color;
+  text-decoration: none;
+}
+
+.user-list__login {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  @include desktop {
+    width: 112px;
+    height: 30px;
+    padding: 25px 0;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black-100-color;
+  }
+}
+
+.user-list__login:active {
+  background-color: $white-100-color;
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+
+  @include desktop {
+    top: 33px;
+    left: 8px;
+  }
+}
+
+.user-list__basket {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  @include desktop {
+    width: 112px;
+    height: 30px;
+    padding: 25px 0;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black-100-color;
+  }
+}
+
+.user-list__basket:active {
+  background-color: $white-100-color;
+}
+
+.user-list__basket-icon {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+
+  @include desktop {
+    top: 33px;
+    left: 8px;
+  }
+}
+
+.user-list__text {
+  display: none;
+
+  @include desktop {
+    display: block;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+}

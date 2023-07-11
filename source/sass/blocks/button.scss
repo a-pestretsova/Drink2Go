@@ -1,0 +1,52 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 20px;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $white-color;
+  background-color: $violet-color;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+
+  @include desktop {
+    padding: 8px 26px;
+  }
+}
+
+.button:hover {
+  background-color: $violet-300-color;
+}
+
+.button:active {
+  background-color: $violet-400-color;
+}
+
+.button:disabled {
+  background-color: $silver-color;
+}
+
+
+.button--reset {
+  margin-top: 20px;
+  color: $violet-color;
+  background-color: $white-color;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.button--reset:hover {
+  color: $white-color;
+}
+
+.button--reset:disabled {
+  color: $white-color;
+  background-color: $silver-200-color;
+}

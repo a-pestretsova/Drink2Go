@@ -1,0 +1,10 @@
+.main-promo {
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  color: $black-100-color;
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
+}

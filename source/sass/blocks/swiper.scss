@@ -1,0 +1,31 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  margin-top: 85px;
+  color: $violet-color;
+  --swiper-navigation-size: 18px;
+
+  @include tablet {
+    margin-top: 108px;
+  }
+
+
+  @include desktop {
+    margin-top: 178px;
+  }
+}
+
+.swiper-button-next::after {
+  margin-left: 28px;
+
+  @include tablet {
+    margin-left: -30px;
+  }
+}
+
+.swiper-button-prev::after {
+  margin-right: 20px;
+
+  @include tablet {
+    margin-left: 50px;
+  }
+}

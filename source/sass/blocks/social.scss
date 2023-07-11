@@ -1,0 +1,57 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 140px;
+  padding-top: 5px;
+
+  @include desktop {
+    width: 160px;
+    padding-top: 0;
+  }
+}
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: $white-color;
+}
+
+.social__link--vkontakte {
+  @include tablet {
+    margin-right: 19px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.social__link--pinterest {
+  @include tablet {
+    margin-right: 18px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.social__link:hover {
+  background-color: $white-100-color;
+}
+
+.social__link:active {
+  background-color: $violet-200-color;
+}
+
+.social__link-icon {
+  vertical-align: middle;
+  fill: $silver-color;
+}
+
+.social__link:hover .social__link-icon {
+  fill: $violet-400-color;
+}
