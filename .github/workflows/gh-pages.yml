@@ -1,9 +1,12 @@
-name: Deploy to GitHub-Pages
+name: gh-pages
 
 on:
   push:
     branches:
       - master
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -19,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: '16.x'
 
       - name: Install dependencies
         run: npm ci
